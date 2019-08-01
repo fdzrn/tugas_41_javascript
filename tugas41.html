@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tugas 41 | DOM JS</title>
+</head>
+<body>
+	<p>Pilih Warna Background</p>
+	<select id="mySelect" onchange="myFunction()">
+		<option value="red">Merah</option>
+		<option value="blue">Biru</option>
+		<option value="yellow">Kuning</option>
+		<option value="white">Putih</option>
+	</select>
+	<p>Saat kamu memilih warna, Background akan berubah</p>
+	<script>
+		function myFunction() {
+			let x = document.getElementById("mySelect").value
+			document.body.style.backgroundColor = x;
+		}
+	</script>
+</body>
+</html>
